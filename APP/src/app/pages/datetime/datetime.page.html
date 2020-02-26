@@ -1,0 +1,39 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Datetime</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-item>
+    <ion-label>Data Default</ion-label>
+    <ion-datetime></ion-datetime>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>DisplayFormat</ion-label>
+    <ion-datetime display-format="DD/MM/YYYY"></ion-datetime>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Display+Picker</ion-label>
+    <ion-datetime display-format="MM/YYYY" picker-format="MMMM YYYY"></ion-datetime>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Max-Min</ion-label>
+    <ion-datetime display-format="MMMM YYYY" min="2016" max="2021"></ion-datetime>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>DDD. MMM DD, YY (custom locale)</ion-label>
+    <ion-datetime value="1995-04-15" min="1990-02" max="2000" displayFormat="DDD. MMM DD, YY"
+      monthShortNames="jan, feb, mar, apr, mai, jun, jul, aug, sep, okt, nov, des">
+    </ion-datetime>
+  </ion-item>
+</ion-content>
