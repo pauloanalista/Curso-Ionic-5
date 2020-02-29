@@ -10,19 +10,26 @@
 
 
 <ion-content>
-
   <h3>Grid possui 12 colunas</h3>
-  <ion-grid text-center>
+  <ion-grid>
     <ion-row>
-      <ion-col>Coluna 1</ion-col>
-      <ion-col>Coluna 2</ion-col>
-      <ion-col>Coluna 3</ion-col>
+      <ion-col>1</ion-col>
+      <ion-col>2</ion-col>
+      <ion-col>3</ion-col>
+      <ion-col>4</ion-col>
+      <ion-col>5</ion-col>
+      <ion-col>6</ion-col>
+      <ion-col>7</ion-col>
+      <ion-col>8</ion-col>
+      <ion-col>9</ion-col>
+      <ion-col>10</ion-col>
+      <ion-col>11</ion-col>
+      <ion-col>12</ion-col>
     </ion-row>
   </ion-grid>
 
-  <h3>Variando o tamanho da colunas</h3>
-
-  <ion-grid text-center>
+  <h3>Variando o tamanho das colunas</h3>
+  <ion-grid>
     <ion-row>
       <ion-col>Coluna 1</ion-col>
       <ion-col>Coluna 2</ion-col>
@@ -35,36 +42,31 @@
     </ion-row>
   </ion-grid>
 
-
-  <h3>Definindo tamanhos para nossas colunas</h3>
-
-  <ion-grid text-center>
+  <h3>Grid possui 12 colunas com 2 linhas</h3>
+  <ion-grid>
     <ion-row>
-      <ion-col size="1">1</ion-col>
-      <ion-col size="1">2</ion-col>
-      <ion-col size="1">3</ion-col>
-      <ion-col size="1">4</ion-col>
-      <ion-col size="1">5</ion-col>
-      <ion-col size="1">6</ion-col>
-      <ion-col size="1">7</ion-col>
-      <ion-col size="1">8</ion-col>
-      <ion-col size="1">9</ion-col>
-      <ion-col size="1">10</ion-col>
-      <ion-col size="1">11</ion-col>
-      <ion-col size="1">12</ion-col>
+      <ion-col>1</ion-col>
+      <ion-col>2</ion-col>
+      <ion-col>3</ion-col>
+      <ion-col>4</ion-col>
+      <ion-col>5</ion-col>
+      <ion-col>6</ion-col>
+      <ion-col>7</ion-col>
+      <ion-col>8</ion-col>
+      <ion-col>9</ion-col>
+      <ion-col>10</ion-col>
+      <ion-col>11</ion-col>
+      <ion-col>12</ion-col>
     </ion-row>
     <ion-row>
-      <ion-col size="4">1</ion-col>
-      <ion-col size="2">2</ion-col>
-      <ion-col size="2">3</ion-col>
-      <ion-col size="4">4</ion-col>
+      <ion-col>1</ion-col>
+      <ion-col>2</ion-col>
     </ion-row>
   </ion-grid>
 
-
   <h3>Pulando colunas para direita</h3>
 
-  <ion-grid text-center>
+  <ion-grid>
     <ion-row>
       <ion-col size="3">Coluna 1</ion-col>
       <ion-col size="3" offset="3">Coluna 2</ion-col>
@@ -72,49 +74,22 @@
     </ion-row>
   </ion-grid>
 
-
-  <h3>Alinhamento vertical</h3>
-  <ion-grid text-center>
-    <ion-row align-items-start>
-      <ion-col>
+  <h3>Alinhamento</h3>
+  <ion-grid>
+    <ion-row>
+      <ion-col class="ion-align-self-start">
         <div>
-          1 of 4
+          1 of 4 (Start)
         </div>
       </ion-col>
-      <ion-col>
+      <ion-col class="ion-align-self-center">
         <div>
-          2 of 4
+          2 of 4 (Center)
         </div>
       </ion-col>
-      <ion-col>
+      <ion-col class="ion-align-self-end">
         <div>
-          3 of 4
-        </div>
-      </ion-col>
-      <ion-col>
-        <div>
-          4 of 4
-          <br> #
-          <br> #
-          <br> #
-        </div>
-      </ion-col>
-    </ion-row>
-
-    <ion-row align-items-center>
-      <ion-col>
-        <div>
-          1 of 4
-        </div>
-      </ion-col>
-      <ion-col>
-        <div>
-          2 of 4
-        </div>
-      </ion-col>
-      <ion-col>
-        <div>
-          3 of 4
+          3 of 4 (End)
         </div>
       </ion-col>
       <ion-col>
@@ -126,26 +101,76 @@
         </div>
       </ion-col>
     </ion-row>
-
-    <ion-row align-items-end>
-      <ion-col>
+    <ion-row>
+      <ion-col class="ion-align-self-start">
         <div>
-          1 of 4
+          1 of 4 (start)
         </div>
       </ion-col>
-      <ion-col>
+      <ion-col class="ion-align-self-start">
         <div>
-          2 of 4
+          2 of 4 (start)
         </div>
       </ion-col>
-      <ion-col>
+      <ion-col class="ion-align-self-start">
         <div>
-          3 of 4
+          3 of 4 (start)
         </div>
       </ion-col>
-      <ion-col>
+      <ion-col class="ion-align-self-start">
         <div>
           4 of 4
+          <br> #
+          <br> #
+          <br> #
+        </div>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col class="ion-align-self-center">
+        <div>
+          1 of 4 (center)
+        </div>
+      </ion-col>
+      <ion-col class="ion-align-self-center">
+        <div>
+          2 of 4 (center)
+        </div>
+      </ion-col>
+      <ion-col class="ion-align-self-center">
+        <div>
+          3 of 4 (center)
+        </div>
+      </ion-col>
+      <ion-col class="ion-align-self-center">
+        <div>
+          4 of 4 (center)
+          <br> #
+          <br> #
+          <br> #
+        </div>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col class="ion-align-self-end">
+        <div>
+          1 of 4 (center)
+        </div>
+      </ion-col>
+      <ion-col class="ion-align-self-end">
+        <div>
+          2 of 4 (center)
+        </div>
+      </ion-col>
+      <ion-col class="ion-align-self-end">
+        <div>
+          3 of 4 (center)
+        </div>
+      </ion-col>
+      <ion-col class="ion-align-self-end">
+        <div>
+          4 of 4 (center)
           <br> #
           <br> #
           <br> #
@@ -158,13 +183,11 @@
 
   <ion-grid>
     <ion-row>
-      <ion-col size-sm="12" size-md="6" size-lg="4" size-xl="3" size-xs="12">
+      <ion-col size-sm="12" size-md="8" size-lg="6" size-xl="3" size-xs="12">
         <div>
-          1 of 4
+          RESPONSIVIDADE
         </div>
       </ion-col>
-
     </ion-row>
   </ion-grid>
-
 </ion-content>
